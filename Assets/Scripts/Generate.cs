@@ -53,16 +53,18 @@ public class Generate : MonoBehaviour
         float z = 0.0f;
         Instantiate(suraimu, new Vector3(x, y, z), Quaternion.identity);
 
-        //float probability = Random.Range(0, 100.0f);
-        //if (probability > 80.0f)
-        //{
-        //    //スライムを生産
+        // 確率でスライムベスを生成
+        // スライムベスは行動が早いなどの設定ができると良い
+        // float probability = Random.Range(0, 100.0f);
+        // if (probability > 80.0f)
+        // {
+        //    //スライムを生成
         //    Instantiate(suraimu, new Vector3(x, y, z), Quaternion.identity);
-        //}
-        //else
-        //{
-        //    //スライムベスを生産
+        // }
+        // else
+        // {
+        //    //スライムベスを生成
         //    Instantiate(suraimu_b, new Vector3(x, y, z), Quaternion.identity);
-        //}
+        // }
     }
 }

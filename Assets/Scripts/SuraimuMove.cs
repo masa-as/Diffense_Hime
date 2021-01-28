@@ -24,21 +24,26 @@ public class SuraimuMove : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "hard")
         {
-            float step = 4f;// 移動速度
+            float step = 3.5f;// 移動速度
             Move(step);
         }
         else
         {
-            float step = 2f;
+            float step = 3f;
             Move(step);
         }
         
 
         GameObject obj = getClickObject();
+        Debug.Log(obj);
         if (obj != null)
         {
             // 以下オブジェクトがクリックされた時の処理
-            Destroy(gameObject);
+            Destroy(obj);
+            if (obj.name == "princess")
+            {
+                Invoke("ChangeScene", 1.0f);
+            }
         }
 
 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/hard.unity
+- path: Assets/Scenes/title(kari).unity
   isLoaded: 1
   isActive: 1
