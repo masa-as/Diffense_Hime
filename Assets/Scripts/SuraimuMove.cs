@@ -35,7 +35,6 @@ public class SuraimuMove : MonoBehaviour
         
 
         GameObject obj = getClickObject();
-        Debug.Log(obj);
         if (obj != null)
         {
             // 以下オブジェクトがクリックされた時の処理
@@ -96,5 +95,4 @@ public class SuraimuMove : MonoBehaviour
     {
         SceneManager.LoadScene("lose");
     }
-
 }

@@ -12,12 +12,12 @@ public class BreakGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        SuraimuCount SC = refObj.GetComponent<SuraimuCount>();
-        if (SC.SuraimuCnt >= 8)
-        {
-            Generator.SetActive(false);
-            //GetComponent<Generate>().enabled = false;
-        }
+        // SuraimuCount SC = refObj.GetComponent<SuraimuCount>();
+        // if (SC.SuraimuCnt >= 8)
+        // {
+        //     Generator.SetActive(false);
+        //     //GetComponent<Generate>().enabled = false;
+        // }
 
     }
 }
