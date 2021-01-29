@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Start : MonoBehaviour
 {
-      void Quit() {
-    #if UNITY_EDITOR
+    void Quit()
+    {
+#if UNITY_EDITOR
       UnityEditor.EditorApplication.isPlaying = false;
-    #elif UNITY_STANDALONE
+#elif UNITY_STANDALONE
       UnityEngine.Application.Quit();
-    #endif
-  }
+#endif
+    }
     // Update is called once per frame
     void Update()
     {
